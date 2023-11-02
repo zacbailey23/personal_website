@@ -17,7 +17,7 @@
 #navbar {
   font-size: 30px;
   color: #979797;
-  background-color: darkgray;
+  background-color: #b9b9b9;
 }
 
 html, body {
@@ -29,13 +29,36 @@ html, body {
 .content {
   flex: 1; /* This makes the content expand to fill the space */
 }
-
 .footer-container {
-  background-color: #7e7e7e; /* Bootstrap's light gray color */
-  padding: 1rem 0;
-  margin-top: auto; /* This pushes the footer to the bottom */
+  background-color: #b9b9b9; /* Light gray background */
+  padding: 1rem 0; /* Padding at the top and bottom */
 }
 
+.footer-content {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Adds space between the text and icons */
+}
+.footer-icons a:first-child {
+  margin-right: 10px; /* Adjust the value as needed for the gap */
+}
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Aligns icons in the center vertically */
+}
+
+.footer-large-text {
+  font-size: 1.5em; /* Sets the font size */
+  margin-bottom: 10px; /* Space between Resume link and phone number */
+}
 
 
 
