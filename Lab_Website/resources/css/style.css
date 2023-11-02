@@ -1,26 +1,49 @@
-#self-desc {
-  font-size: 30px;
-  color: black;
-  vertical-align: text-top;
-  
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.outlined-paragraph {
-  border: 2px solid grey;
-  padding: 10px; 
+
+#self-desc {
+  margin-right: 20px; /* Adjust as needed for spacing between text and image */
+}
+
+#self-image {
+  /* If you need the image to be centered within its flex item space, you can use this: */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 #navbar {
-  font-size: 50px;
-  color: #82b5ee;
+  font-size: 30px;
+  color: #979797;
   background-color: darkgray;
 }
 
-body {
-  background-color: darkgrey;
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+.content {
+  flex: 1; /* This makes the content expand to fill the space */
+}
+
+.footer-container {
+  background-color: #7e7e7e; /* Bootstrap's light gray color */
+  padding: 1rem 0;
+  margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+
+
+
 
 #hobbies.grid-container {
   display: flex;
 }
+
 .hobby-card {
   
   margin: 10px;
@@ -30,13 +53,6 @@ body {
   border-radius: 10px;
   text-align: center;
   color: white;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 #Information {
